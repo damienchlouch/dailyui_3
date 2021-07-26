@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #E5C6A8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    top: 50px;
+    margin-left: 42%;
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 11px;
+}
+
+.search_bar{
+    top: 50px;
+    left: 61%;
+    position: absolute;
+    display: flex;
+}
+
+.search_field input{
+    border-radius: 0;
+    color: white;
+    border: 0;
+    background-color: #2E3192;
+    font-size: 11px;
+}
+
+nav ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin: 5px;
+}
+
+.content_svg{
+    margin: auto;
+    margin-top: 10%;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
+    position: relative;
+}
+
+svg{
+    width: 1300px;
+    height: 828px;
+    object-fit: cover;
+    background-color: white;
+    margin-top: -50px;
+}
+
+.btn_touch{
+    position: absolute;
+    top: 50px;
+    right : 50px;
+    width: 130px;
+    height: 40px;
+    background-color: #FFD336;
+}
+
+.btn_touch p{
+    text-align: center;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    color: #2E3192;
+    font-weight: bold;
+}
+
+.burger{
+    position: absolute;
+    top: 50px;
+    left : 50px;
+    z-index: 1000;
+}
+
+h1{
+    position: absolute;
+    top: 150px;
+    left : 50px;
+    z-index: 100;
+    width: 180px;
+    color: #2E3192;
+}
+
+p{
+    top: 310px;
+    left : 50px;
+    width: 180px;
+    font-size: 11px;
+    position: absolute;
+    color: #2E3192;
+    z-index: 1000;
+}
+
+.btn_social{
+    left: 45%;
+    position: absolute;
+    margin-top: 550px;
+    top: 0;
+}
+
+@media screen and (max-width:1200px) {
+    
+    svg{
+        /* display: none; */
+        /* width: calc(100% + 250px); */
+        height: 100%;
+        margin-left: -100px;
+    }
+
+    .content_svg{
+        margin: 0;
+        margin-top: 10%;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.329);
+        position: relative;
+        
+    }
+
+    .btn_touch{
+        position: relative;
+        top: 50px;
+        margin-left: calc(85% - 65px);
+        width: 130px;
+        height: 40px;
+        background-color: #FFD336;
+    }
+ 
+    .btn_social{
+        left: calc(50% - 43px);
+        width: 86px;;
+        position: absolute;
+        top: 0;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .search_bar{
+        top: 100px;
+        left: 54.5%;
+        position: absolute;
+        display: flex;
+        background-color: #2E3192;
+    }
+    
+    .search_field input{
+        border-radius: 0;
+        width: 70px;
+        color: white;
+        border: 0;
+        background-color: #2E3192;
+        font-size: 11px;
+    }
+}
